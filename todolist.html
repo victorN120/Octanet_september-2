@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+    <script defer src="todolist.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Add a task...">
+        <label for="deadline" style="font-size: larger;font-weight: bolder;">Deadline Date and Time:</label>
+        <input type="datetime-local" id="deadline">
+        <label for="priority" style="margin-left: 40px;font-size: large; font-weight:bolder;">Priority:</label>
+        <select id="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <button id="addtask" onclick="addTask()" >Add Task</button>
+        <br></br>
+        <ul id="taskList"></ul>
+    </div>
+
+   
+</body>
+</html>
+
